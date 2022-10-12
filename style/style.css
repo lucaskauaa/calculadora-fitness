@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color01: #BF0000;
+    --color02: #E60000;
+    --color03: #FE0000;
+    --color04: #E0E0E0;
+}
+
+#body {
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+}
+
+#part01 {
+    flex-basis: 45%;
+    background-image: linear-gradient(to bottom, var(--color01), var(--color02), var(--color03));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 465px;
+}
+
+#part02 {
+    flex-basis: 55%;
+    background-color: var(--color04);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#calculator {
+    background-color: #ffffff;
+    width: 400px;
+    padding: 15px 35px 20px 35px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
+}
+
+#calculator h1 {
+    color: #000000;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#calculator form {
+    font-size: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#calculator #feminino {
+   margin-left: 15px;
+}
+
+#calculator .datas {
+    font-size: 16px;
+    width: 200px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+#calculator button {
+    align-self: center;
+    background-color: var(--color01);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 35px;
+}
+
+#second {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+#second div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#second p{
+    font-size: 18px;
+}
+
+#second table {
+    font-size: 16px;
+    border-collapse: collapse;
+    max-width: 400px;
+}
+
+#second th {
+    background-color: var(--color04);
+}
+
+#second th, td {
+    border: 1px solid #000000;
+    padding: 7px;
+    text-align: center;
+}

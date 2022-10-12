@@ -1,0 +1,29 @@
+@media print {
+    #main {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    #part01 {
+        display: none;
+    }
+
+    #part02 {
+        flex-basis: 100%;
+        background-color: #ffffff;
+    }
+
+    #calculator {
+        box-shadow: none;
+        border: 1px solid #000000;
+    }
+
+    #calculator button {
+        display: none;
+    }
+
+    #second {
+        display: none;
+    }
+
+
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/print.css">
+    <link rel="stylesheet" href="style/phone.css">
+    <title>Metamorfose Fitness | Calculadora Fitness</title>
+</head>
+<body>
+    <section id="main">
+        <section id="part01">
+            <img src="images/metamorfose-465.png" alt="Logo da Metamorfose Fitness" id="logo">
+        </section>
+        <section id="part02">
+            <div id="calculator">
+                <h1>Calculadora Fitness</h1>
+                <form>
+                    <div>
+                        <label for="nome">Insira seu nome:</label><br>
+                        <input type="text" name="calculator" id="nome" class="datas" placeholder="Nome">
+                    </div>
+                    <div>
+                        <label for="idade">Insira sua idade:</label><br>
+                        <input type="number" name="calculator" id="idade" class="datas" placeholder="Idade">
+                    </div>
+                    <div>
+                        <label for="">Sexo:</label><br>
+                        <input type="radio" name="calculator" id="masculino" checked>
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="calculator" id="feminino">
+                        <label for="feminino">Feminino</label>
+                    </div>
+                    <div>
+                        <label for="peso">Insira seu peso:</label><br>
+                        <input type="number" name="calculator" id="peso" class="datas" placeholder="Peso (kg)">
+                    </div>
+
+                    <div>
+                        <label for="altura">Insira sua altura:</label><br>
+                        <input type="number" name="calculator" id="altura" class="datas" placeholder="Em cm (ex: 180, 175)">
+                    </div>
+                    <div>
+                        <label for="atividade">Nível de atividade física:</label><br>
+                        <select name="calculator" id="atividade" class="datas">
+                            <option value="selecionar">Selecionar-</option>
+                            <option value="leve">Leve (1-3 dias por semana)</option>
+                            <option value="moderada">Moderada (4-5 dias por semana)</option>
+                            <option value="intensa">Intensa (6-7 dias por semana)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Objetivo:</label><br>
+                        <select name="calculator" id="objetivo" class="datas">
+                            <option value="selecionar">Selecionar-</option>
+                            <option value="ganhar peso">Ganhar peso</option>
+                            <option value="manter o peso">Manter o peso</option>
+                            <option value="perder peso">Perder peso</option>
+                        </select>
+                    </div>
+                    <button type="button">Calcular</button>
+                </form>
+            </div>
+        </section>
+    </section>
+    <aside id="second">
+        <h1>Formulas Utilizadas:</h1>
+        <h2>Calcular Macronutrientes:</h2>
+        <div>
+            <h3>1° Calcular taxa de metabolismo basal (TMB)</h3>
+            <p><strong>P:</strong> Peso.</p>
+            <p><strong>A:</strong> Altura.</p>
+            <p><strong>I:</strong> Idade.</p>
+            <table>
+                <tr>
+                    <th>Sexo</th>
+                    <th>Fórmula de Harris-Benedict</th>
+                </tr>
+                <tr>
+                    <td>Feminino</td>
+                    <td>655 + (9,6 x P) + (1,9 x A) – (4,7 x I)</td>
+                </tr>
+                <tr>
+                    <td>Masculino</td>
+                    <td>66 + (13,8 x P) + (5,0 x A) – (6,8 x I)</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h3>2° Calcular fator atividade física</h3>
+            <table>
+                <tr>
+                    <th>Nível de atividade física</th>
+                    <th>Valores</th>
+                </tr>
+                <tr>
+                    <td>Leve</td>
+                    <td>Fator médio de 1.375</td>
+                </tr>
+                <tr>
+                    <td>Moderada</td>
+                    <td>Fator médio de 1.55</td>
+                </tr>
+                <tr>
+                    <td>Intensa</td>
+                    <td>Fator médio de 1.725</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h3>3° Calcular gasto calórico total</h3>
+            <p><strong>Gasto calórico total:</strong> Taxa de metabolismo basal x Fator atividade física.</p>
+        </div>
+        <div>
+            <h3>4° Calcular o consumo de calorias</h3>
+            <p><strong>Manter peso:</strong> consumir o gasto calórico total.</p>
+            <p><strong>Ganhar peso:</strong> gasto calórico total + 500 calorias.</p>
+            <p><strong>Perder peso:</strong> gasto calórico total - 500 calorias.</p>
+        </div>
+        <div>
+            <h3>5° Dividir os macros</h3>
+            <p><strong>Proteínas:</strong> 14,29% das calorias totais.</p>
+            <p><strong>Carboidratos:</strong> 57,14% das calorias totais.</p>
+            <p><strong>Gorduras:</strong> 28,57% das calorias totais.</p>
+        </div>
+        <div>
+            <h2>Calculo Creatina:</h2>
+            <p><strong>Creatina:</strong> 0,07g X kg.</p>
+        </div>
+        <div>
+            <h2>Calculo quantidade de água:</h2>
+            <table>
+                <tr>
+                    <th>Faixa Etária</th>
+                    <th>Quantidade de água por kg</th>
+                </tr>
+                <tr>
+                    <td>Até os 17 anos</td>
+                    <td>40 ml por cada kg</td>
+                </tr>
+                <tr>
+                    <td>18 a 55 anos</td>
+                    <td>35 ml por cada kg</td>
+                </tr>
+                <tr>
+                    <td>55 a 65 anos</td>
+                    <td>30 ml por cada kg</td>
+                </tr>
+                <tr>
+                    <td>Mais de 66 anos</td>
+                    <td>25 ml por cada kg</td>
+                </tr>
+            </table>
+        </div>
+    </aside>
+    <script src="script/script.js"></script>
+</body>
+</html>
