@@ -51,16 +51,20 @@ button.addEventListener('click', () => {
         }
 
         let totalCalories;
+        let showObjective;
 
         switch (objectiveValue) {
             case "ganhar peso":
                 totalCalories = totalSpend + 500;
+                showObjective = 'ganhar peso';
                 break;
             case "manter o peso":
                 totalCalories = totalSpend;
+                showObjective = 'manter o peso';
                 break;
             case "perder peso":
                 totalCalories = totalSpend - 500;
+                showObjective = 'perder peso';
         }
 
         const carbo = (totalCalories / 100 * 57.14) / 4;
@@ -93,7 +97,7 @@ button.addEventListener('click', () => {
             metabolism: `\u{1F3C3} Metabolismo:`,
             metabolismBasal: `Taxa de metabolismo basal: ${metabolismBasal.toFixed(0)} kcal.`,
             totalSpend: `Gasto energético total: ${totalSpend.toFixed(0)} kcal.`,
-            totalCalories: `Você deve ingerir ${totalCalories.toFixed(0)} kcal por dia para ganhar peso.`,
+            totalCalories: `Você deve ingerir ${totalCalories.toFixed(0)} kcal por dia para ${showObjective}.`,
             macros: `\u{1F357} Macronutrientes:`,
             protein: `Proteínas: ${protein.toFixed(0)} g por dia ou ${proteinMacro.toFixed(1)} g por kg`,
             carbo: `Carboidratos: ${carbo.toFixed(0)} g por dia ou ${carboMacro.toFixed(1)} g por kg`,
