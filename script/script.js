@@ -25,6 +25,7 @@ button.addEventListener('click', () => {
 
     if(nameValue == 0 || ageValue == 0 || weightValue == 0 || heightValue == 0) {
         window.alert("Preencha todos os espaços");
+        name.focus();
     } else {
 
         let metabolismBasal;

@@ -81,7 +81,7 @@
 
 #calculator button {
     align-self: center;
-    background-color: var(--color01);
+    background-color: var(--color03);
     color: #ffffff;
     font-size: 18px;
     font-weight: bold;
@@ -89,6 +89,11 @@
     border-radius: 5px;
     width: 100px;
     height: 35px;
+    cursor: pointer;
+}
+
+#calculator button:hover {
+    background-color: var(--color01);
 }
 
 #second {
