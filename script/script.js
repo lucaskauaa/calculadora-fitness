@@ -56,7 +56,7 @@ button.addEventListener('click', () => {
 
         switch (objectiveValue) {
             case "ganhar peso":
-                totalCalories = totalSpend + 500;
+                totalCalories = totalSpend + 300;
                 showObjective = 'ganhar peso';
                 break;
             case "manter o peso":
@@ -64,7 +64,7 @@ button.addEventListener('click', () => {
                 showObjective = 'manter o peso';
                 break;
             case "perder peso":
-                totalCalories = totalSpend - 500;
+                totalCalories = totalSpend - 300;
                 showObjective = 'perder peso';
         }
 
