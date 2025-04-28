@@ -31,10 +31,10 @@ button.addEventListener('click', () => {
         let metabolismBasal;
 
         if (masculine.checked) {    
-            metabolismBasal = 66 + (13.8 * weightValue) + (5 * heightValue) - (6.8 * ageValue);
+            metabolismBasal = 88.36 + (13.4 * weightValue) + (4.8 * heightValue) - (5.7 * ageValue);
             
         } else if (feminine.checked) {
-            metabolismBasal = 655 + (9.6 * weightValue) + (1.8 * heightValue) - (4.7 * ageValue);
+            metabolismBasal = 447.6 + (9.2 * weightValue) + (3.1 * heightValue) - (4.3 * ageValue);
         }
         
         let totalSpend;
